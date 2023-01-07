@@ -1,0 +1,46 @@
+{
+  "name": "charchamp",
+  "version": "0.0.0",
+  "description": "A personal npm card for Charlie (@charchamp)",
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "homepage": "https://charchamp.cc",
+  "bugs": {
+    "url": "https://github.com/charchamp/npm-card/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charchamp/npm-card.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Charlie <hi@charchamp.cc> (https://charchamp.cc)",
+  "type": "module",
+  "main": "/bin/card.js",
+  "bin": {
+    "card": "./bin/card.js"
+  },
+  "files": [
+    "bin/card.js"
+  ],
+  "scripts": {
+    "dev": "node ./bin/card.js",
+    "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
+  },
+  "dependencies": {
+    "boxen": "^7.0.0",
+    "chalk": "^5.0.0"
+  },
+  "devDependencies": {
+    "bumpp": "^8.2.1"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=6.0.0"
+  }
+}
