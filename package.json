@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/charchamp/npm-card.git"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "author": "Charlie <hi@charchamp.cc> (https://charchamp.cc)",
   "type": "module",
   "main": "/bin/card.js",
